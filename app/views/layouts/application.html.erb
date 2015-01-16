@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Academic</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Academic Management</h1>
+<p>
+ <h1><%= link_to "Admin" , academic_management_admin_path %> </h1>
+</p>
+<p>
+ <h1><%= link_to "Student" , academic_management_student_path %> </h1>
+</p>
+<p>
+ <h1><%= link_to "Employee" , academic_management_employee_path %> </h1>
+</p>
+<%= yield %>
+
+</body>
+</html>
